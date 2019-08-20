@@ -1,5 +1,5 @@
 <template>
-    <div class="Table">
+    <div id="Input__area" class="Table">
         <div class="logo">
             <p class="outside">М</p>
             <h2 class="logo__text">Мы хотели бы услышать о вашем проекте</h2>
@@ -12,11 +12,22 @@
             </div>
             <textarea name="Text" placeholder="Ваше сообщение"></textarea>
             <div class="Table__button">
-                <button type="submit">Отправить</button>
+                <button v-on:click="Table__Output" type="submit">Отправить</button>
             </div>
         </form>
     </div>
 </template>
+
+<script>
+export default {
+        el:'#Input__area',
+        methods: {
+            Table__Output: function(){
+                console.log('ready')
+            }
+        },
+}
+</script>
 
 <style >
 .logo{
@@ -35,12 +46,12 @@
     display: inline-block;
     position: relative;
     font-size: 200px;
-    color: #670a35;
+    color: #ad8ead;
     margin: 0;
 }
-    .Table{
+.Table{
     padding: 20px;
-    background: #520428;
+    background: #c8a2c8;
     color: white;
 }
 .Table form{
@@ -71,7 +82,7 @@ input{
     height: 150px;
 }
 .Table__button button{
-    background: #3b8daf;
+    background: #ad8ead;
     border: none;
     color: #f3f3f3;
     font-size: 20px;

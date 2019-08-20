@@ -7,17 +7,13 @@
             <path d="M0 22H23" stroke="#FFE0E0"/>
         </svg>            
         <div id="menu__mobile" class="menu">
-            <a href="#">Главная</a>
-            <a href="#">Анимация и Js</a>
+            <a href="#" @click="switchView('index')">Главная</a>
+            <a href="#" @click="switchView('animation')">Анимация и Js</a>
             <a href="#">Векторная Графика</a>
             <a href="#">Верстка и Api</a>
         </div>
     </header>
 </template>
-
-<script>
-
-</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
@@ -32,14 +28,13 @@ header{
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    padding: 30px 50px 0;
+    padding: 20px 30px 0;
     position: absolute;
     justify-content: space-between;
     left: 0;
     right: 0;
     color: #f4ab42;
     align-items: center;
-    background: black;
 }
 .logo{
     font-size: 30px;
