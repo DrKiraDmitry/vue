@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Router from 'vue-router'
 import app from './app.vue'
 import header from './template/header/header.vue'
 import animation from './template/animation/animation.vue'
@@ -6,10 +7,19 @@ import index from './template/index/index.vue'
 import contact from './template/contact/contact.vue'
 import footer from './template/footer/footer.vue'
 
+Vue.use(Router)
+
+const router = new Router({
+ routes: [
+   {path: '/index', component: index},
+   {path: '/animation', component: animation}
+ ]
+})
 
 new Vue({
   el: '#app',
-  render: h => h(app)
+  render: h => h(app),
+  router
 })
 new Vue({
   el: '#header',

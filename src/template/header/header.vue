@@ -5,13 +5,13 @@
             <path d="M0 0.5H23" stroke="#FFE0E0"/>
             <path d="M0 11.246H23" stroke="#FFE0E0"/>
             <path d="M0 22H23" stroke="#FFE0E0"/>
-        </svg>            
-        <div id="menu__mobile" class="menu">
-            <a href="#" @click="switchView('index')">Главная</a>
-            <a href="#" @click="switchView('animation')">Анимация и Js</a>
-            <a href="#">Векторная Графика</a>
-            <a href="#">Верстка и Api</a>
-        </div>
+        </svg>
+            <nav id="menu__mobile" class="menu">
+                <router-link to="/index">+ Главная</router-link>
+                <router-link to="/animation">+ Главная</router-link>
+                <a href="#">Векторная Графика</a>
+                <a href="#">Верстка и Api</a>
+            </nav>
     </header>
 </template>
 
